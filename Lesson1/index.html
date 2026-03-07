@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="UTF-8">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson 1</title>
+    <style>
+        /* Коментар стилів */
+        /*
+            Одиниці вимірювання розміру
+            px - піксель
+            % - відсоток від батьківського елемента
+            em - відносно поточного розміру шрифту
+            rem - (root em) відносно <html>
+            vh - відносно висоти екрану
+            vw - відносно ширини екрану
+        */
+        body {
+            font-size: 18px;
+            background-color: rgb(98, 116, 214);
+            color: white;
+        }
+
+        /* Селектор за класом */
+        .text1 {
+            color: rgb(124, 35, 35);
+        }
+
+        /* Селектор за ID */
+        #text2 {
+            color: rgb(12, 37, 12);
+        }
+    </style>
+</head>
+<body>
+    <!-- Це коментар -->
+    <h1>Заголовок 1</h1>
+    <h2>Заголовок 2</h2>
+    <h3>Заголовок 3</h3>
+    <h4>Заголовок 4</h4>
+    <h5>Заголовок 5</h5>
+    <h6>Заголовок 6</h6>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet, doloremque.</p>
+
+    <p>Sed eos molestiae consectetur facilis laboriosam fugit error veritatis non.</p>
+
+    <p style="color: red">Libero numquam ullam eveniet vero! Fuga perferendis natus necessitatibus? Accusantium.</p>
+
+    <p>
+        <a href="https://mystat.itstep.org/main">Ваш щоденник</a>
+    </p>
+    
+    <img src="https://picsum.photos/seed/picsum/400/200" alt="Нема картинки">
+
+    <p>
+        <strong class="text">Важливий текст</strong><br>
+        <b class="text1">Жирний текст</b><br>
+        <i id="text2">Курсивний текст</i><br>
+        <em>Акцентований текст</em><br>
+        <mark>Виділений текст</mark><br>
+        <del>Закреслений текст</del><br>
+    </p>
+</body>
+</html>
