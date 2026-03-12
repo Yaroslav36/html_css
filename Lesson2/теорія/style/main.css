@@ -1,0 +1,45 @@
+/* * - звернення до всіх тегів */
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background: rgb(244, 245, 210);
+}
+h2 {
+    font-family: "Great Vibes", cursive;
+    font-weight: 500;
+    font-style: normal;
+}
+p {
+    color: rgb(199, 63, 63);
+    font-family: cursive;
+}
+.wrapper {
+    margin: 20px;
+    box-shadow: 0 0 10px rgb(110, 110, 110);
+    padding: 10px;
+}
+#victim {
+    width: 300px;
+    border: 2px solid rgb(25, 112, 46);
+    /* 
+    padding-top: 10px;
+    padding-bottom: 20px;
+    padding-left: 30px;
+    padding-right: 40px; 
+
+    padding-inline: 20px;
+    padding-block: 10px;
+    */
+
+    padding: 20px 30px; 
+    
+    /*
+    padding: 10px 20px 30px 40px;
+    */
+
+    margin: 30px auto;
+}

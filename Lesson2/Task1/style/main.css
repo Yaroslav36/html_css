@@ -1,0 +1,56 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+h3 {
+    color: rgb(15, 78, 15);
+    font-family: Arial;
+    text-decoration: underline;
+    text-decoration-color: rgb(224, 156, 167);
+    text-decoration-style: wavy;
+}
+.wrapper {
+    margin: 20px 100px;
+}
+.main_title {
+    text-align: center;
+    font-family: Arial;
+    text-decoration: underline;
+    text-decoration-style: double;
+    text-decoration-color: rgb(224, 156, 167);
+    letter-spacing: 3px;
+}
+.green_shadow {
+    text-shadow: 2px 2px 10px rgb(27, 128, 27);
+}
+.deleted_text {
+    text-decoration: line-through;
+}
+.under_line_text {
+    text-decoration: underline;
+    text-decoration-color: rgb(207, 68, 92);
+    text-decoration-style: dotted;
+}
+.upper_text {
+    font-family: Arial;
+    letter-spacing: 2px;
+    font-weight: 700;
+}
+#yellow {
+    color: rgb(187, 187, 0);
+}
+#green {
+    color: rgb(23, 139, 23);
+}
+#red {
+    color: red;
+}
+#purple {
+    color: purple;
+}
+#dark_green {
+    color: rgb(5, 61, 5);
+}
+#brown {
+    color: brown;
+}
