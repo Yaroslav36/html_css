@@ -1,45 +1,99 @@
 <!DOCTYPE html>
 <html lang = "en">
-<head>
-    <meta charset = "UTF-8">
-    <meta name = "viewport" content = "width = device-width, initial-scale = 1.0">
-    <title>Task 3</title>
-</head>
-<body>
-    <div id = "main_block">
-        <h1>HTML Tutorial</h1>
+    <head>
+        <meta charset = "UTF-8">
+        <meta name = "viewport" content = "width = device-width, initial-scale = 1.0">
+        <title>Task 3</title>
+        <style>
+            body {
+                font-family: Arial;
+            }
+            h1 {
+                text-align: center;
+            }
+            h3 {
+                text-align: center;
+            }
+            mark {
+                color: rgb(19, 205, 205);
+                background-color: rgb(216, 215, 215);
+            }
+            .tags {
+                color: rgb(161, 89, 67);
+            }
+            .under_line {
+                text-decoration-line: underline;
+                text-decoration-style: dotted;
+            }
+            #main_block {
+                background-color: rgb(232, 232, 229);
+                margin: 30px;
+                padding: 15px;
+            }
+            #some_code_block {
+                background-color: rgb(220, 218, 214);
+                padding: 20px;
+            }
+            #one_tab {
+                margin-left: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <div id = "main_block">
+            <h1>HTML Tutorial</h1>
 
-        <h3>What is HTML?</h3>
+            <hr>
 
-        <p>Hypertext Markup Language (HTML) is the standard markup language for creating web pages and web applications.</p>
+            <h3>What is HTML?</h3>
 
-        <p>Web browsers receive HTML documents from a web server or from local storage and render the documents into multimedia web pages. HTML describes the structure of a web page semantically and originally included cues for the appearance of the document.</p>
+            <p><strong>Hypertext Markup Language (<span class = "under_line">HTML</span>)</strong> is the standard markup language for creating web pages and web applications.</p>
 
-        <p>HTML elements are the building blocks of HTML pages. With HTML constructs, images and other objects such as interactive forms may be embedded into the rendered page. HTML provides a means to create structured documents by denoting structural semantics for text such as headings, paragraphs, lists, links, quotes and other items. HTML elements are delineated by tags, written using angle brackets. Tags such as <code><img /></code> and <code><input /></code> directly introduce content into the page. Other tags such as <p> surround and provide information about document text and may include other tags as sub-elements. Browsers do not display the HTML tags, but use them to interpret the content of the page.</p>
+            <p>Web browsers receive <span class = "under_line">HTML</span> documents from a web server or from local storage and render the documents into multimedia web pages. <span class = "under_line">HTML</span> describes the structure of a web page semantically and originally included cues for the appearance of the document.</p>
 
-        <hr>
+            <p><span class = "under_line">HTML</span> elements are the building blocks of <span class = "under_line">HTML</span> pages. With <span class = "under_line">HTML</span> constructs, images and other objects such as interactive forms may be embedded into the rendered page. <span class = "under_line">HTML</span> provides a means to create structured documents by denoting structural semantics for text such as headings, paragraphs, lists, links, quotes and other items. <span class = "under_line">HTML</span> elements are delineated by tags, written using angle brackets. Tags such as <span class = "tags">&ltimg /&gt</span> and <span class = "tags">&ltinput /&gt</span> directly introduce content into the page. Other tags such as <p> surround and provide information about document text and may include other tags as sub-elements. Browsers do not display the <span class = "under_line">HTML</span> tags, but use them to interpret the content of the page.</p>
 
-        <h3>Markup</h3>
+            <hr>
 
-        <p>HTML markup consists of several key components, including those called tags (and their attributes), character-based data types, character references and entity references. HTML tags most commonly come in pairs like <h1> and </h1>, although some represent empty elements and so are unpaired, for example <img>. The first tag in such a pair is the start tag, and the second is the end tag (they are also called opening tags and closing tags).</p>
+            <h3>Markup</h3>
 
-        <p>Another important component is the HTML document type declaration, which triggers standards mode rendering.</p>
+            <p><span class = "under_line">HTML</span> markup consists of several key components, including those called tags (and their attributes), character-based data types, character references and entity references. <span class = "under_line">HTML</span> tags most commonly come in pairs like <span class = "tags">&lth1&gt</span> and <span class = "tags">&lt/h1&gt</span>, although some represent empty elements and so are unpaired, for example <span class = "tags">&ltimg&gt</span>. The first tag in such a pair is the start tag, and the second is the end tag (they are also called opening tags and closing tags).</p>
 
-        <p>The following is an example of the classic "Hello, World!" program:</p>
+            <p>Another important component is the <span class = "under_line">HTML</span> document type declaration, which triggers standards mode rendering.</p>
 
-            <code>
-                <!DOCTYPE html>
-                <html>
-                    <head>
-                        <title>This is a title</title>
-                    </head>
-                    <body>
-                        <p>Hello world!</p>
-                    </body>
-                </html>
-            </code>
-            
-        <p>Tags: CodingScripting head HTML Introduction to HTML Landing Links semantics Structure Text</p>
-    </div>
-</body>
+            <p>The following is an example of the classic "Hello, World!" program:</p>
+
+            <!-- <span class = "tags">&lt&gt</span> <br> -->
+            <p id = "some_code_block">
+                <span class = "tags">&lt!DOCTYPE html&gt</span> <br>
+                <span class = "tags">&lthtml&gt</span> <br>
+                    <span class = "tags" style = "margin-left: 20px;">&lthead&gt</span> <br>
+                        <span class = "tags" style = "margin-left: 40px;">&lttitle&gt</span>
+                        This is a title
+                        <span class = "tags">&lt/title&gt</span> <br>
+                    <span class = "tags" style = "margin-left: 20px;">&lt/head&gt</span> <br>
+                    <span class = "tags" style = "margin-left: 20px;">&ltbody&gt</span> <br>
+                        <span class = "tags" style = "margin-left: 40px;">&ltp&gt</span>
+                        Hello World!
+                        <span class = "tags">&lt/p&gt</span> <br>
+                    <span class = "tags" style = "margin-left: 20px;">&lt/body&gt</span> <br>
+                <span class = "tags">&lt/html&gt</span> <br>
+            </p>
+
+            <hr>
+
+            <p>
+                <strong>Tags: </strong>
+                <mark>CodingScripting</mark>
+                <mark>head</mark>
+                <mark>HTML</mark>
+                <mark>Introduction to HTML</mark>
+                <mark>Landing</mark>
+                <mark>Links</mark>
+                <mark>semantics</mark>
+                <mark>Structure</mark>
+                <mark>Text</mark>
+            </p>
+        </div>
+    </body>
 </html>

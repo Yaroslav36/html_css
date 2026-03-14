@@ -1,0 +1,64 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family:
+    Segoe UI,
+    sans-serif;
+  line-height: 1.6;
+}
+code {
+    background-color: rgb(232, 232, 232);
+    padding: 5px;
+}
+.wrapper {
+  width: 900px;
+  margin-inline: auto;
+  background-color: rgb(243, 245, 247);
+  padding-inline: 40px;
+  padding-block: 50px;
+}
+.main_title {
+  letter-spacing: 5px;
+  text-align: center;
+  border-bottom-width: 4px;
+  border-bottom-style: double;
+}
+.definition {
+  font-style: italic;
+  background-color: rgb(224, 249, 255);
+  margin-block: 20px;
+  padding: 20px;
+  border-left: 5px solid rgb(40, 125, 235);
+}
+.line {
+  margin-block: 30px;
+}
+.green_title {
+  color: rgb(27, 163, 27);
+  border-bottom: 2px solid rgb(27, 163, 27);
+  margin-block: 30px;
+  font-weight: 750;
+}
+.content {
+    margin-block: 10px;
+    padding-left: 10px;
+    border-left: 2px solid rgb(213, 218, 223);
+}
+.color_titles {
+    font-weight: 750;
+}
+.orange_title {
+    color: rgb(225, 152, 18);
+}
+.blue_title {
+    color: rgb(48, 99, 239);
+}
+.brown_title {
+    color: brown;
+}
+.purple_title {
+    color: purple;
+}
