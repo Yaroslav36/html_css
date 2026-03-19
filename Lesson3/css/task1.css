@@ -1,0 +1,60 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.wrapper {
+    width: 800px;
+    margin-inline: auto;
+    margin-block: 50px;
+    padding: 80px 60px;
+    background: rgb(238, 238, 238);
+}
+.title {
+    font-weight: 700;
+}
+.main_list {
+    margin: 20px 50px;
+    list-style-type: "";
+}
+.main_list li::before{
+    content: ">";
+    font-size: 24px;
+    margin-inline: 7px;
+}
+.season {
+    margin-left: 70px;
+}
+.season li::before{
+    content: "";
+    font-size: 24px;
+    margin-inline: 7px;
+}
+#winter {
+    list-style-image: url("../img/winter_16.png");
+}
+#winter li::before {
+    content: "";
+}
+#spring {
+    list-style-image: url("../img/spring_16.png");
+}
+#spring li::before {
+    content: "";
+}
+#summer {
+    list-style-image: url("../img/summer_16.png");
+}
+#summer li::before {
+    content: "";
+}
+#autumn {
+    list-style-image: url("../img/autumn_16.png");
+}
+#autumn li::before {
+    content: "";
+}
+body {
+    font-family: Arial;
+    font-size: 20px;
+}

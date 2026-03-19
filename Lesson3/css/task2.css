@@ -1,0 +1,15 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.wrapper {
+    width: 800px;
+    margin-inline: auto;
+    margin-block: 50px;
+    padding: 80px 60px;
+    background: rgb(238, 238, 238);
+}
+.second_list {
+    margin-left: 50px;
+}

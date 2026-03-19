@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.wrapper {
+    max-width: 1000px;
+    margin-inline: auto;
+    margin-top: 50px;
+    font-size: 18px;
+}
+
+.japan_order_list {
+    list-style-type: hiragana;
+    list-style-position: outside;
+}
+.bg li {
+    background-color: rgb(49, 236, 236);
+    margin-block: 10px;
+}
+.image {
+    /* list-style-image: url("../img/free-icon-bosu-ball-8793122.png"); */
+
+    list-style: lower-greek outside;
+}
+.block {
+    background-color: rgb(171, 115, 223);
+    width: 500px;
+    height: 500px;
+    border: 10px outset yellow;
+     overflow: scroll;
+}
+ol {
+    list-style-position: inside;
+}
+dt {
+    font-weight: 700;
+}
+dd {
+    margin-left: 15px;
+    font-style: italic;
+}
