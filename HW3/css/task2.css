@@ -1,0 +1,45 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.wrapper {
+  width: 800px;
+  margin-inline: auto;
+  margin-block: 50px;
+  background-color: rgb(235, 230, 230);
+  padding: 50px 20px;
+  font-family: Arial;
+}
+.list {
+  margin-block: 20px;
+}
+.list > li {
+  padding-left: 10px;
+  padding-block: 12px;
+  list-style-type: none;
+  height: 40px;
+}
+.list > li::before {
+  margin-inline: 25px;
+}
+.list > .not_done::before {
+  content: url("../img/unchecked_16.png");
+}
+.done {
+  background-color: rgb(221, 216, 216);
+  text-decoration: line-through;
+}
+.done::before {
+  content: url("../img/checked_16.png");
+}
+.list > li::after {
+  content: url("../img/cross_16.png");
+  margin-inline: 40px;
+}
+.dark {
+  background-color: rgb(49, 181, 214);
+}
+.light {
+  background-color: rgb(87, 193, 232);
+}

@@ -1,0 +1,30 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.wrapper {
+  width: 900px;
+  margin-inline: auto;
+  margin-block: 30px;
+}
+.some_list {
+    margin-inline: auto;
+    padding: 35px 50px;
+    background-color: rgb(243, 176, 188);
+    color: white;
+    font-size: 20px;
+    font-family: Arial;
+    list-style-position: inside;
+}
+.some_list>li{
+    background-color: rgb(205, 102, 119);
+    margin-block: 10px;
+    padding: 10px 20px;
+}
+.text {
+    background-color: rgb(159, 54, 72);
+    margin-left: 10px;
+    padding-inline: 20px;
+    padding-block: 10px;
+}
