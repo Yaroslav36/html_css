@@ -1,0 +1,27 @@
+.block-1 { 
+    box-sizing: content-box; 
+    background-color: yellow;
+    width: 300px; 
+    height: 300px; 
+    padding: 20px; 
+   
+    margin-bottom: 20px;
+} 
+.block-2 {
+    box-sizing: content-box; 
+    background-color: greenyellow;
+    width: 300px; 
+    height: 300px; 
+    padding: 20px; 
+    
+    margin-bottom: 20px;
+}
+.block-3 {
+    box-sizing: content-box; 
+    background-color: greenyellow;
+    width: 300px; 
+    height: 300px; 
+    padding: 20px; 
+
+    margin-bottom: 20px;
+}
