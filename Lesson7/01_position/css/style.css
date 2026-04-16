@@ -1,0 +1,68 @@
+@import url("reset.css");
+
+body {
+  /* padding-top: 160px; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* height: 350vh; */
+}
+
+.parent {
+  margin: 0 auto;
+  background-color: #18b5a4;
+  min-height: 700px;
+  width: 75%;
+  padding: 16px;
+  position: relative;
+}
+
+.parent>[class*="child"] {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 18px;
+  /* line-height: 100px; */
+  font-weight: 700;
+  padding: 40px;
+  color: #fff;
+  box-sizing: border-box;
+}
+
+
+.child-1 {
+  background-color: red;
+  position: relative;
+  transition: 1s;
+  top: 0;
+  right: 0;
+}
+
+.child-1:hover {
+  top: 40px;
+  right: 100px;
+  transition: 1s;
+}
+
+.child-2 {
+  background-color: green;
+  position: relative;
+  z-index: 1;
+}
+
+.child-3 {
+  background-color: blue;
+  position: fixed;
+  /* bottom: 0;
+  left: 0; */
+  top: 0;
+  right: 0;
+  width: 100%;
+}
+
+.child-4 {
+  background-color: rgb(212, 212, 33);
+}
+
+p {
+  padding: 40px;
+}

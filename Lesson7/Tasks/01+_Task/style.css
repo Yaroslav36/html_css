@@ -1,0 +1,44 @@
+.wrapper {
+    width: 90%;
+    max-width: 1000px;
+    margin: 20px auto;
+    position: relative;
+}
+
+.pos {
+    border: 3px double #0c800c;
+    border-radius: 8px;
+    padding: 2px;
+    background-color: #fff;
+    box-shadow: 0 0 12px 3px rgba(0, 0, 0, 0.45);
+    cursor: pointer;
+    position: absolute;
+}
+
+.pos:hover {
+   z-index: 3;
+}
+
+.pos1 {
+   z-index: -1;
+   top: 100px;
+   left: 100px;
+}
+
+.pos2 {
+   z-index: auto;
+   top: 200px;
+   left: 200px;
+}
+
+.pos3 {
+    z-index: 2;
+    top: 300px;
+    left: 300px;
+}
+
+.pos4 {
+    z-index: 1;
+    top: 50px;
+    left: 400px;
+}

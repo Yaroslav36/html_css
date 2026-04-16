@@ -1,0 +1,46 @@
+.wrapper {
+    font-family: sans-serif;
+    font-size: 20px;
+    width: 90%;
+    max-width: 1000px;
+    margin: 20px auto;
+    position: relative;
+    perspective: 600px;
+}
+
+.pos {
+    /* position: absolute; */
+    width: 170px;
+    height: 220px;
+    text-align: center;
+    padding: 15px;
+    border: 3px double rgb(106, 148, 190);
+    background-color: rgba(204, 221, 238, 0.73);
+    box-shadow: 0 0 12px 3px rgba(0, 0, 0, 0.45);
+    transform: rotateY(15deg);
+    position: absolute;
+}
+
+.pos1 {
+    z-index: -1;
+    top: 20px;
+    left: 20px;
+}
+
+.pos2 {
+    z-index: auto;
+    top: 70px;
+    left: 70px;
+}
+
+.pos3 {
+    z-index: 1;
+    top: 120px;
+    left: 120px;
+}
+
+.pos4 {
+    z-index: 2;
+    top: 170px;
+    left: 170px;
+}

@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.main_block, .mini_block, .center_block {
+    border: 5px solid black;
+}
+.big_block {
+    width: 700px;
+    height: 400px;
+    margin: 100px auto;
+} 
+.main_block {
+    margin: 50px;
+    width: 600px;
+    height: 300px;
+    position: relative;
+}
+.mini_block {
+    width: 100px;
+    height: 100px;
+    position: fixed;
+}
+.center_block {
+    width: 300px;
+    height: 150px;
+    margin: 75px auto;
+}
+.top {
+    top: 0;
+}
+.bottom {
+    bottom: 0;
+}
+.right {
+    right: 0;
+}
+.left {
+    left: 0;
+}
