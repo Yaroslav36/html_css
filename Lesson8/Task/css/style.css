@@ -1,0 +1,308 @@
+:root {
+  --fon-color: #fff;
+  --text-color: rgb(85, 85, 85);
+  --title-color: rgb(46, 46, 46);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  border: none;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+html {
+  scroll-padding-top: 150px;
+}
+
+body {
+  background-color: var(--fon-color);
+  color: var(--text-color);
+}
+
+.wrapper {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.main {
+  flex: 1 1 auto;
+}
+
+[class*='__container'] {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/* ============================== */
+
+.header {
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+  background-color: rgba(255, 255, 255);
+}
+
+.header__container {
+  display: flex;
+  gap: 40px;
+  justify-content: space-between;
+}
+
+.header__info {
+  flex: 1 1 auto;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.header__title {
+  color: var(--title-color);
+  font-style: italic;
+  font-size: 50px;
+}
+
+.header__subtitle {
+  color: var(--title-color);
+  font-size: 40px;
+  font-style: italic;
+}
+
+@media (max-width: 980px) {
+  .header__title {
+    font-size: calc(30px + (50 - 30) * ((100vw - 320px) / (1100 - 320)));
+  }
+
+  .header__subtitle {
+    font-size: calc(20px + (50 - 20) * ((100vw - 320px) / (1100 - 320)));
+  }
+}
+
+.header__menu {
+  flex: 0 1 350px;
+  align-self: center;
+}
+
+.menu {}
+
+.menu__list {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  column-gap: 10px;
+  row-gap: 10px;
+  list-style: none;
+}
+
+.menu__item {
+  padding: 10px 15px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  border-radius: 20px;
+  box-shadow: 0px 0px 10px green;
+}
+
+/* =============================== */
+
+.main {
+  padding-top: 200px;
+}
+
+.main__task {}
+
+.task {}
+
+.task__container {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.task__description {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+
+.task__description *:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.task__description:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.task__title {
+  color: var(--title-color);
+  letter-spacing: 2px;
+  font-weight: 900;
+  font-size: 22px;
+}
+
+.task__text {
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+.task__list {
+  margin-left: 50px;
+}
+
+.task__item:not(:last-child) {
+  margin-bottom: 5px;
+}
+
+.task__implementation {
+  position: relative;
+  padding-left: 20px;
+  border-left: 3px solid rgb(59, 15, 218);
+  min-height: 300px;
+}
+
+@media (max-width: 450px) {
+  .main {
+    padding-top: 300px;
+  }
+}
+
+/* ============================================= */
+
+:root {
+  --bg-container: #d0d0d0;
+  --bg-red: red;
+  --bg-blue: blue;
+  --bg-gray: gray;
+  --bg-green: green;
+  --bg-yellow: yellow;
+
+}
+
+.bg_block {
+  background: var(--bg-container);
+}
+
+.mini_block {
+  padding: 20px;
+  font-size: 18px;
+  font-weight: 900;
+  color: black;
+}
+
+.bg_red {
+  background: var(--bg-red);
+}
+
+.bg_blue {
+  background: var(--bg-blue);
+}
+
+.bg_gray {
+  background: var(--bg-gray);
+}
+
+.bg_green {
+  background: var(--bg-green);
+}
+
+.bg_yellow {
+  background: var(--bg-yellow);
+}
+
+.bg {
+  background-color: rgb(238, 238, 238);
+}
+
+/* ! Код пишимо тут Task-1*/
+.task-1 .bg {
+  min-height: 300px;
+}
+.task-1 .flex_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+.task-1 .mini_block {
+  width: 120px;
+  flex-shrink: 1;
+}
+.task-1 .mini_block:first-child,
+.task-1 .mini_block:last-child {
+  width: 200px;
+}
+
+/* ! Код пишимо тут Task-2*/
+.task-2 .bg {
+  min-height: 300px;
+}
+.task-2 .flex_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.task-2 .mini_block {
+  width: 50%;
+  flex-shrink: 1;
+}
+
+.task-2 .mini_block:nth-child(1) {
+  align-self: flex-end;
+}
+
+.task-2 .mini_block:nth-child(3) {
+  align-self: flex-start;
+}
+
+/* ! Код пишимо тут Task-3*/
+.task-3 .bg {
+  min-height: 100px;
+  padding-block: 30px;
+}
+.task-3 .flex_container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+.task-3 .mini_block {
+  border-radius: 29px;
+  width: 150px;
+  box-shadow: 0 0 15px 5px rgb(58, 201, 58);
+}
+
+/* ! Код пишимо тут Task-4*/
+.task-4 .header {
+  background-color: rgb(43, 98, 201);
+  height: 60px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* ! Код пишимо тут Task-5*/
+
+/* ! Код пишимо тут Task-6*/
+
+/* ! Код пишимо тут Task-7*/
+
+/* ! Код пишимо тут Task-8*/
