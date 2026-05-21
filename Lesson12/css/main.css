@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Heebo:wght@100..900&display=swap');
+@import url("reset.css");
+
+body {
+    font-family: "Heebo", sans-serif;
+    font-size: 16px;
+}
+header {
+    width: 950px;
+    margin: 0 auto;
+}
+.menu {
+    font-size: 20px;
+    font-weight: 700;
+    padding-block: 30px;
+    display: flex;
+    gap: 28px;
+    justify-content: flex-end;
+}
+.menu_item a {
+    color: black;
+}
+.info_descrition h2 {
+    font-size: 44px;
+    font-weight: bold;
+    margin-block: 25px;
+}
+.info_descrition p {
+    margin-bottom: 47px;
+}
+.info_img {
+    width: 300px;
+}
+.info_img_ellips {
+    width: 245px;
+    height: 245px;
+    border-radius: 50%;
+    background-color: #EDF7FA;
+
+}
+.info_img_ellips img {
+    position: relative;
+    top: -13px;
+    left: -5px;
+}
+.info_link {
+    color: #fff;
+    padding: 13px 20px 13px 20px;
+    background-color: #FF6464;
+    font-size: 20px;
+}
+.header_info {
+    display: flex;
+    padding-top: 150px;
+    gap: 100px;
+}
+.wrapper {
+    width: 860px;
+    margin: 0 auto;
+}
+.posts_container {
+    background-color: #EDF7FA;
+    margin-top: 68px;
+    margin-inline: auto;
+    width: 950px;
+    padding-top: 27px;
+    padding-bottom: 12px;
+}
+.wrapper_container {
+    width: 860px;
+    margin: 0 auto;
+}
+.posts_header {
+    display: flex;
+    justify-content: space-between;
+}
+.posts_header h3 {
+    height: 60px;
+    font-size: 22px;
+    font-weight: 500;
+}
+.posts_header a {
+    color: #00A8CC;
+}
+.posts_cards {
+    display: flex;
+    justify-content: space-between;
+}
+.card {
+    width: 418px;
+    height: 295px;
+    background-color: #fff;
+    padding: 22px;
+}
+.card .description {
+    margin-top: 17px;
+    margin-bottom: 11px;
+    display: flex;
+}
+.data {
+    margin-right: 30px;
+}
+.line {
+    background-color: black;
+    width: 1px;
+    height: 21px;
+    margin-right: 25px;
+}
+.card h4 {
+    font-size: 26px;
+    font-weight: bold;
+}

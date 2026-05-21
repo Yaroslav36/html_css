@@ -1,0 +1,66 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+}
+.container {
+  max-width: 1200px;
+  margin-inline: auto;
+
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.header {
+  background-color: pink;
+  flex-basis: 8rem;
+}
+.main {
+  flex: 1 1 auto;
+  display: flex;
+}
+.main__aside-left {
+  background-color: cyan;
+  flex-basis: 20%;
+}
+.main__page {
+  background-color: coral;
+  flex: 1 1 auto;
+}
+.main__aside-right {
+  background-color: lime;
+  flex-basis: 20%;
+}
+.footer {
+  background-color: gray;
+  flex-basis: 5rem;
+}
+
+@media (min-width: 768px) {
+  /* стилі для екранів, що мають мінімальну ширину 768px */
+}
+
+@media screen and (max-width: 1024px) {
+  /* стилі для екранів, що мають максимальну ширину 1024px */
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  /* стилі для екранів, що мають ширину від 768px до 1024px */
+}
+
+@media screen and (min-resolution: 192dpi) {
+  /* стилі для екранів з високою щільністю пікселів */
+}
+
+@media screen and (orientation: landscape) {
+  /* ваші стилі тут */
+}
+
+@media screen and (orientation: portrait) {
+  /* стилі для екранів у вертикальному режимі */
+}
