@@ -1,0 +1,30 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial;
+    font-size: 15px; /* 15px */
+    font-weight: 400;
+}
+h1 {
+  font-size: 30px; /* 36px */
+  line-height: 1.2;
+  font-weight: 700;
+}
+.wrapper {
+    max-width: 900px;
+    margin: 50px auto;
+}
+.task1_container {
+    background-color: rgb(4, 67, 67);
+    padding: 40px;
+}
+.darker_text {
+    color: rgb(122, 147, 147);
+}
+/*
+rgb(122, 147, 147) - проміжний текст
+rgb(4, 67, 67) - фон
+*/
