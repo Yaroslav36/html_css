@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --Red: hsl(0, 100%, 74%);
+    --Green: hsl(154, 59%, 51%);
+    --Blue: hsl(248, 32%, 49%);
+    --Dark-Blue: hsl(249, 10%, 26%);
+    --Grayish-Blue: hsl(246, 25%, 77%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("images/bg-intro-desktop.png");
+    background-color: var(--Red);
+    font-family: "Poppins", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    font-size: 16px;
+}
+
+.wrapper {
+    width: 900px;
+    margin: 40px auto;
+}
+
+.main {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+}
+
+.description {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+.my_form a {
+    display: block;
+    border-radius: 10px;
+    background-color: var(--Blue);
+    text-decoration: none;
+    color: white;
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    padding-block: 12px;
+    margin-block: 15px;
+}
+.block {
+    background-color: white;
+    border-radius: 10px;
+    padding: 30px;
+}
+.block input {
+    height: 50px;
+    width: 100%;
+    border-radius: 10px;
+    margin-block: 5px;
+    padding-inline: 30px;
+    border: 1px solid grey;
+    transition-property: 0.5s;
+    transition-timing-function: ease;
+}
+.block input:hover {
+    border: 3px solid black;
+    transition-property: 0.5s;
+    transition-timing-function: ease;
+}
+.block a {
+    display: block;
+    border-radius: 10px;
+    background-color: var(--Green);
+    text-decoration: none;
+    color: white;
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    padding-block: 12px;
+    margin-block: 5px;
+}
+.block p {
+    color: var(--Grayish-Blue);
+    font-size: 10px;
+    font-weight: 700;
+    text-align: center;
+}
+.red_text {
+    color: var(--Red);
+}

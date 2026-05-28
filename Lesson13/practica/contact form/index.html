@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Contact form</title>
+</head>
+
+<body>
+  <div class="wrapper">
+    <form action="q.php" class="my_form">
+      <h1>Contact form</h1>
+
+      <div class="container">
+        <label for="name">Name:</label>
+        <input type="text" name="name" id="name">
+      </div>
+
+      <div class="container">
+        <label for="email">Email:</label>
+        <input type="text" name="email" id="email">
+      </div>
+
+      <div class="container">
+        <label for="message">Message:</label>
+        <textarea name="message" id="message" rows="10"></textarea>
+      </div>
+
+      <a href="#">
+        <div class="button">
+          Send my message
+        </div>
+      </a>
+    </form>
+  </div>
+</body>
+
+</html>

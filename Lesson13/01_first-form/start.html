@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>First form</title>
+  <!-- https://gradienty.xyz -->
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    .wrapper {
+      padding: 1rem;
+      padding-top: 2rem;
+      min-height: 100vh;
+      max-width: 75rem;
+      margin-inline: auto;
+    }
+    .box {
+      display: flex;
+      flex-direction: column;
+      max-width: 400px;
+      margin-block: 50px;
+    }
+    .form2 {
+      max-width: 400px;
+      box-shadow: 3px 3px 3px black;
+      border-radius: 10px;
+      padding: 20px;
+      background: linear-gradient(135deg, #3a0303 0%, #ea2344 100%);
+      margin-top: 50px;
+    }
+    .container label {
+      color: white;
+      font-weight: 600;
+      font-family: monospace;
+    }
+    .container input {
+      border-radius: 10px;
+      padding-inline: 5px;
+    }
+    .container {
+      display: flex;
+      justify-content: space-between;
+      padding-block: 10px;
+      transition-timing-function: ease;
+      transition-duration: 0.5s;
+    }
+    .container:hover {
+      text-shadow: 2px 2px 5px grey;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="wrapper">
+    <form action="action_page.php" method="post" name="my_form">
+      <div class="box">
+        <label for="text">text</label>
+        <input type="text" name="text">
+      </div>
+      <div class="box">
+        <label for="password">password</label>
+        <input type="password" name="passwrod">
+      </div>
+      <div>
+        <label for="radio">radio1</label>
+        <input type="radio" name="radio">
+        <label for="radio">radio2</label>
+        <input type="radio" name="radio">
+        <label for="radio">radio3</label>
+        <input type="radio" name="radio">
+      </div>
+      <div class="box">
+        <label for="checkbox">checkbox</label>
+        <input type="checkbox" name="checkbox">
+      </div>
+      <div class="box">
+        <label for="hidden">hidden</label>
+        <input type="hidden" name="hidden">
+      </div>
+      <div class="box">
+        <label for="button">button</label>
+        <input type="button" name="button" value="enter">
+      </div>
+      <div class="box">
+        <label for="submit">submit</label>
+        <input type="submit" name="submit">
+      </div>
+      <div class="box">
+        <label for="reset">reset</label>
+        <input type="reset" name="reset">
+      </div>
+      <div class="box">
+        <label for="file">file</label>
+        <input type="file" name="file">
+      </div>
+      <div class="box">
+        <label for="image">image</label>
+        <input type="image" name="image">
+      </div>
+      <button type="button">Click me</button>
+
+      <label for="comment">Введіть коментар</label>
+      <textarea name="comment" id="comment" cols="100" rows="10" placeholder="enter comment"></textarea>
+    </form>
+
+    <form class="form2" action="q.php" method="post">
+      <div class="container">
+        <label for="fname">first name: </label>
+        <input type="text" id="fname" name="fname" placeholder="Enter first name">
+      </div>
+      <div class="container">
+        <label for="lname">last name: </label>
+        <input type="text" id="lname" name="lname" placeholder="Enter last name">
+      </div>
+      <div class="container">
+        <label for="pass">Password: </label>
+        <input type="password" id="pass" name="pass" maxlength="12" placeholder="Enter password" required>
+      </div>
+      <div class="container">
+        <label for="email">Email: </label>
+        <input type="email" id="email" name="email" placeholder="@gmail.com">
+      </div>
+      <div class="container">
+        <label for="phone">Phone: </label>
+        <input type="tel" id="phone" name="phone" placeholder="+380 (**) - *** - ** - **">
+      </div>
+      <div class="container">
+        <label for="bday">Birthday: </label>
+        <input type="date" id="bday" name="bday">
+      </div>
+      <div class="container">
+        <label for="quantity">Quantity: </label>
+        <input type="number" id="quantity" name="quantity" min="0" value="1" step="2">
+      </div>
+      <div class="container">
+        <label for="payment">Payment: </label>
+        <select  id="payment" name="payment">
+          <option value="Visa">Visa</option>
+          <option value="MasterCard">MasterCard</option>
+          <option value="Maestro">Maestro</option>
+        </select>
+      </div>
+    </form>
+  </div>
+</body>
+
+</html>
