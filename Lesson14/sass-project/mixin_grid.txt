@@ -1,0 +1,9 @@
+@mixin grid($columns, $column-width, $gutter-width) {
+  display: grid;
+  grid-template-columns: repeat($columns, $column-width);
+  gap: $gutter-width;
+ 
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,31 @@
+@mixin container($max_width) {
+    max-width: $max_width;
+    margin: 0 auto;
+    padding-inline: 30px;
+}
+
+@mixin btnColor($colorBG, $colorText) {
+    border: none;
+    outline: none;
+    background-color: $colorBG;
+    color: $colorText;
+    padding-block: 10px;
+    padding-inline: 30px;
+    transition-duration: 0.5s;
+    transition-timing-function: ease;
+
+    &:hover {
+        background-color: darken($colorBG, 10%);
+        transition-duration: 0.5s;
+        transition-timing-function: ease;
+    }
+}
+
+@mixin grid($columns, $min-w, $max-w, $gap) {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax($min-w, $max-w));
+    gap: $gap;
+    @media (max-width: 768px){
+        grid-template-columns: 1fr;
+    }
+}

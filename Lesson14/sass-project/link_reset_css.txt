@@ -1,0 +1,4 @@
+https://www.joshwcomeau.com/css/custom-css-reset/
+https://piccalil.li/blog/a-more-modern-css-reset/
+https://necolas.github.io/normalize.css/
+https://meyerweb.com/eric/tools/css/reset/
