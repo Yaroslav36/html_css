@@ -1,0 +1,14 @@
+.wrapper {
+    max-width: 1200px;
+    margin-inline: auto;
+}
+.navbar {
+    height: 80px;
+}
+.new_ad {
+    height: 40px;
+}
+.search-box {
+    height: 60px;
+    padding: 10px;
+}
