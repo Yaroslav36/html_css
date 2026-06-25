@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-size: 15px;
+    font-family: Arial;
+}
+h2 {
+    text-align: center;
+}
+section * {
+    margin-block: 20px;
+}
+.header {
+    background-color: rgb(240, 127, 127);
+    height: 55px;
+    padding-block: 15px;
+}
+.author {
+    color: white;
+}
+.author, .navigation, .navigation li {
+    display: inline;
+}
+.author {
+    margin-left: 150px;
+}
+.navigation {
+    margin-left: 650px;
+}
+.navigation li {
+    margin-inline: 10px;
+}
+.navigation li a {
+    text-decoration: none;
+    color: rgb(255, 227, 67);
+    letter-spacing: 2px;
+}
+.main {
+    width: 900px;
+    margin-inline: auto;
+    padding: 15px;
+}
+.article_title {
+    font-size: 25px;
+}
+.section_1_img {
+    display: block;
+    border-radius: 15px;
+    margin-inline: auto;
+}
+.section_1_text {
+    margin-inline: auto;
+    border-radius: 15px;
+    padding: 15px;
+    box-shadow: 0 0 10px 5px rgb(76, 24, 232);
+}
+.weight_text {
+    font-weight: 700;
+    font-size: 20px;
+    margin-inline: auto;
+}
+.card {
+    border-radius: 15px;
+    width: 270px;
+    padding: 20px 10px;
+    margin: 10px;
+    box-shadow: 0 0 5px 5px rgb(133, 130, 130);
+}
+.card * {
+    margin-block: 10px;
+    display: inline;
+}
+.card img {
+    border-radius: 15px;
+}
+.top, .bottom {
+    display: flex;
+}
+.card_task_3 {
+    padding: 0;
+    display: flex;
+    box-shadow: 0 0 5px 2px rgb(211, 203, 203);
+    border-radius: 15px;
+    height: 170px;
+    overflow: hidden;
+}
+.image img, .image {
+    object-fit: cover;
+    margin: 0;
+}
+.text {
+    margin: 15px;
+}
+.footer {
+    background-color: rgb(77, 29, 29);
+    height: 55px;
+    padding-block: 15px;
+}
+#task_2 {
+    margin-block: 100px;
+    padding-block: 10px;
+    background-color: rgb(221, 217, 217);
+}
+#b1 {
+    background-color: white;
+    color: rgb(96, 33, 144);
+}
+#b2 {
+    background-color: rgb(234, 229, 229);
+    color: rgb(202, 50, 192);
+}
+#b3 {
+    background-color: rgb(216, 210, 210);
+    color: rgb(46, 179, 48);
+}
+#b4 {
+    background-color: rgb(177, 170, 170);
+    color: rgb(96, 33, 144);
+}
+#b5 {
+    background-color: rgb(146, 139, 139);
+    color: rgb(0, 0, 0);
+}
+#b6 {
+    background-color: rgb(93, 89, 89);
+    color: rgb(207, 117, 48);
+}

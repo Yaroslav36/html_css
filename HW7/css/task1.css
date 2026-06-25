@@ -1,0 +1,89 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.wrapper {
+  margin: 50px auto;
+  max-width: 1000px;
+  min-width: 400px;
+}
+.main {
+  background-color: rgb(19, 75, 77);
+  margin: auto;
+  padding: 80px 55px;
+  font-family: Arial;
+  font-size: 18px;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: auto auto auto;
+  gap: 30px;
+}
+.photo {
+  grid-area: photo;
+}
+.photo img {
+  height: 80px;
+  object-fit: contain;
+}
+.path {
+  color: rgb(162, 171, 176);
+}
+.title {
+  color: white;
+  font-size: 40px;
+  font-weight: 600;
+}
+.person {
+  display: grid;
+  grid-template-columns: 80px repeat(4, 1fr);
+  grid-template-areas: "photo author comments published updates";
+  gap: 20px;
+  align-items: center;
+}
+.info {
+  color: white;
+}
+.mini_title {
+  color: rgb(162, 171, 176);
+}
+.block {
+  padding: 0;
+}
+.block:nth-child(2) {
+  grid-area: author;
+}
+.block:nth-child(3) {
+  grid-area: comments;
+}
+.block:nth-child(4) {
+  grid-area: published;
+}
+.block:nth-child(5) {
+  grid-area: updates;
+}
+
+@media (max-width: 600px) {
+  .main {
+    padding: 20px;
+    font-family: Arial;
+    font-size: 22px;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: auto auto auto;
+    gap: 40px;
+  }
+  .title {
+    font-size: 35px;
+    font-weight: 500;
+  }
+  .person {
+    display: grid;
+    grid-template-rows: 80px 80px;
+    grid-template-columns: 80px 1fr 1fr;
+    grid-template-areas:
+      "photo updates author"
+      "photo comments published";
+    gap: 20px;
+  }
+}

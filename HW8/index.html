@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Flexbox.</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+  <div class="wrapper">
+    <header class="header">
+      <div class="header__container">
+        <div class="header__info">
+          <h1 class="header__title">Практична робота</h1>
+          <h2 class="header__subtitle">Модуль: Flexbox.</h2>
+        </div>
+        <div class="header__menu menu">
+          <ul class="menu__list">
+            <li class="menu__item"><a href="#task-1">Task-1</a></li>
+            <li class="menu__item"><a href="#task-2">Task-2</a></li>
+            <li class="menu__item"><a href="#task-3">Task-3</a></li>
+            <li class="menu__item"><a href="#task-4">Task-4</a></li>
+            <li class="menu__item"><a href="#task-5">Task-5</a></li>
+            <li class="menu__item"><a href="#task-6">Task-6</a></li>
+            <li class="menu__item"><a href="#task-7">Task-7</a></li>
+            <li class="menu__item"><a href="#task-8">Task-8</a></li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <main class="main">
+      <!--TODO Task 1 -->
+      <section id="task-1" class="main__task task">
+        <div class="task__container">
+          <div class="task__description">
+            <span class="task__title">Task 1.</span>
+            <span class="task__text">
+              Створюємо контейнер flexbox і 5 flex-елементів. Встановлюємо відступ між елементами 20px. Всі елементи
+              центруємо по головній та поперечній осі. Першому і останьому елементу даємо можливість збільшуватися
+              (розтягуватися) на вільний простір. Всім елементам вказуємо базовий розмір по головній осі 150px.
+            </span>
+          </div>
+          <div class="task__implementation task-1">
+            <!--! Код пишимо тут -->
+            <div class="flex_container bg">
+              <div class="bg_red mini_block">RED</div>
+              <div class="bg_blue mini_block">BLUE</div>
+              <div class="bg_gray mini_block">GRAY</div>
+              <div class="bg_green mini_block">GREEN</div>
+              <div class="bg_yellow mini_block">YELLOW</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--TODO Task 2 -->
+      <section id="task-2" class="main__task task">
+        <div class="task__container">
+          <div class="task__description">
+            <span class="task__title">Task 2.</span>
+            <span class="task__text">
+              Створюємо контейнер flexbox і 4 flex-елементів.Змінюємо напрямок головної осі по вертикалі. Встановлюємо
+              ширину всім елементам 50%. Першому елементу даємо вирівнювання по правій стороні. Другому елементу по
+              центру. Третьому елементу по лівому краю. І четвертому по центру.
+            </span>
+          </div>
+          <div class="task__implementation task-2">
+            <!--! Код пишимо тут -->
+            <div class="flex_container bg">
+              <div class="bg_red mini_block">RED</div>
+              <div class="bg_blue mini_block">BLUE</div>
+              <div class="bg_green mini_block">GREEN</div>
+              <div class="bg_yellow mini_block">YELLOW</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--TODO Task 3 -->
+      <section id="task-3" class="main__task task">
+        <div class="task__container">
+          <div class="task__description">
+            <span class="task__title">Task 3.</span>
+            <span class="task__text">
+              Створюємо контейнер flexbox і 4 flex-елементів. За шаблоном робимо чотири кнопки. Встановлюємо відступ
+              між ними 15px. Вирівнювання по основній осі space-around, по поперечній осі вирівнювання по центру. При
+              звужені екрану кнопки переходять на новий рядок.
+            </span>
+          </div>
+          <div class="task__implementation task-3">
+            <!--! Код пишимо тут -->
+            <div class="flex_container bg">
+              <div class="bg_red mini_block">RED</div>
+              <div class="bg_blue mini_block">BLUE</div>
+              <div class="bg_green mini_block">GREEN</div>
+              <div class="bg_yellow mini_block">YELLOW</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--TODO Task 4 -->
+      <section id="task-4" class="main__task task">
+        <div class="task__container">
+          <div class="task__description">
+            <span class="task__title">Task 4.</span>
+            <span class="task__text"> Створити шапку сайту по шаблону. </span>
+          </div>
+          <div class="task__implementation task-4">
+            <!--! Код пишимо тут -->
+            <div class="header_t4">
+              <div class="logo">Google</div>
+              <ul class="nav">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">My Work</a></li>
+                <li>Contacts</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--TODO Task 5 -->
+      <section id="task-5" class="main__task task">
+        <div class="task__container">
+          <div class="task__description">
+            <span class="task__title">Task 5.</span>
+            <span class="task__text">
+              Створити за допомогою flexbox 3 колонки. В першій колонці текст відсутній. В другій lorem20. В третій
+              lorem40. Колинки при будь-якому розширинні екрану повинні бути однакового розміру і розтягуватися на
+              весь батьківський контейнер.</span>
+          </div>
+          <div class="task__implementation task-5">
+            <!--! Код пишимо тут -->
+            <div class="text"></div>
+            <div class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia corrupti delectus enim quasi inventore. Quo nobis quibusdam et nostrum cupiditate.</div>
+            <div class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam modi molestias asperiores, magni deserunt quasi similique! Placeat ipsum officia voluptates itaque eius optio et error? Quasi cum quisquam ea deserunt repellendus eos tempore quam sit incidunt est, placeat blanditiis odio.</div>
+          </div>
+        </div>
+      </section>
+
+      <!--TODO Task 6 -->
+      <section id="task-6" class="main__task task">
+        <div class="task__container">
+          <div class="task__description">
+            <span class="task__title">Task 6.</span>
+            <span class="task__text">Розміщуємо елементи за шаблоном.</span>
+          </div>
+          <div class="task__implementation task-6">
+            <!--! Код пишимо тут -->
+            <div class="text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam modi ipsam suscipit illum necessitatibus odit consequatur facilis nulla, excepturi itaque?
+            </div>
+            <div class="text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, fugit!
+            </div>
+            <div class="text">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem, culpa incidunt. Nemo nihil sit dolores, quas voluptate fuga consequuntur ea iure alias quae, sapiente laboriosam natus quisquam a quis exercitationem ipsum fugiat incidunt omnis cum distinctio tempore. Ad dolorem accusamus tenetur enim reprehenderit, pariatur explicabo aspernatur nostrum autem doloremque harum!
+            </div>
+            <div class="text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim quisquam beatae necessitatibus non sunt perspiciatis at error quidem eius! Perspiciatis ex commodi architecto odio saepe quis cupiditate, tempora molestias iste est reiciendis ea voluptatibus eaque, quam aut fugit impedit harum.
+            </div>
+            <div class="text">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel pariatur maiores dolores, provident quaerat corporis quidem ipsa nesciunt repellat voluptatibus animi, id rem! Blanditiis mollitia suscipit dolorem quibusdam deleniti. Eaque.
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--TODO Task 7 -->
+      <section id="task-7" class="main__task task">
+        <div class="task__container">
+          <div class="task__description">
+            <span class="task__title">Task 7.</span>
+            <span class="task__text">Розміщуємо елементи за шаблоном.</span>
+          </div>
+          <div class="task__implementation task-7">
+            <!--! Код пишимо тут -->
+            <div class="text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam modi ipsam suscipit illum necessitatibus odit consequatur facilis nulla, excepturi itaque?
+            </div>
+            <div class="text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, fugit!
+            </div>
+            <div class="text">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem, culpa incidunt. Nemo nihil sit dolores, quas voluptate fuga consequuntur ea iure alias quae, sapiente laboriosam natus quisquam a quis exercitationem ipsum fugiat incidunt omnis cum distinctio tempore. Ad dolorem accusamus tenetur enim reprehenderit, pariatur explicabo aspernatur nostrum autem doloremque harum!
+            </div>
+            <div class="text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim quisquam beatae necessitatibus non sunt perspiciatis at error quidem eius! Perspiciatis ex commodi architecto odio saepe quis cupiditate, tempora molestias iste est reiciendis ea voluptatibus eaque, quam aut fugit impedit harum.
+            </div>
+            <div class="text">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel pariatur maiores dolores, provident quaerat corporis quidem ipsa nesciunt repellat voluptatibus animi, id rem! Blanditiis mollitia suscipit dolorem quibusdam deleniti. Eaque.
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--TODO Task 8 -->
+      <section id="task-8" class="main__task task">
+        <div class="task__container">
+          <div class="task__description">
+            <span class="task__title">Task 8.</span>
+            <span class="task__text">Розміщуємо елементи за шаблоном.</span>
+          </div>
+          <div class="task__implementation task-8">
+            <!--! Код пишимо тут -->
+            <div class="text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio iure quia, exercitationem ullam possimus libero veritatis facere est magni voluptates.
+            </div>
+            <div class="text">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur, eum.
+            </div>
+            <div class="text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam corrupti distinctio laboriosam natus quis aperiam sit quia tempora debitis ad? Dolore dignissimos fuga accusantium dolorum debitis totam magni quasi! Temporibus nam accusantium voluptate placeat molestiae blanditiis eius beatae in enim?
+            </div>
+            <div class="text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam saepe assumenda perferendis ducimus iste quod expedita, soluta dolorum nobis illum officia. Fugiat harum delectus earum ullam possimus sed laborum blanditiis enim qui, necessitatibus, animi exercitationem voluptates autem eligendi eius ad?
+            </div>
+            <div class="text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, sequi quis eius ipsa fugit, cumque id magnam dolore totam, nisi quas sunt impedit deserunt atque.
+            </div>
+            <div class="text">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus voluptate illo, perferendis numquam corrupti corporis culpa itaque optio, deleniti architecto sint reprehenderit eum laboriosam exercitationem.
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer__container"></div>
+    </footer>
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,160 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial;
+  font-size: 18px;
+}
+header {
+  grid-area: header;
+  border-bottom: 2px solid rgb(199, 199, 199);
+  display: flex;
+  justify-content: space-between;
+  padding-inline: 20px 40px;
+  padding-block: 15px;
+  background-color: white;
+}
+aside {
+  grid-area: sidebar;
+  padding-block: 20px;
+  background-color: white;
+}
+main {
+  grid-area: main;
+  background-color: white;
+}
+.wrapper {
+  max-width: 950px;
+  margin: 30px auto;
+}
+.main_container {
+  display: grid;
+  grid-template-rows: auto 1fr;
+  grid-template-columns: 1fr 3fr;
+  grid-template-areas:
+    "header header"
+    "sidebar main";
+  background-color: rgb(244, 241, 241);
+  min-height: 80vh;
+}
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: auto;
+  gap: 20px;
+}
+.container img {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+}
+.img_container img {
+  border-radius: 50%;
+}
+.menu_item {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 12px 25px;
+  cursor: pointer;
+  color: rgb(100, 100, 100);
+}
+.menu_item.active {
+  background-color: rgb(252, 228, 236);
+  color: rgb(233, 30, 99);
+}
+.menu_img img {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+}
+.mail_item {
+  display: grid;
+  grid-template-columns: 40px 140px 1fr 40px 80px;
+  align-items: center;
+  padding: 15px 20px;
+  border-bottom: 1px solid rgb(230, 230, 230);
+  font-size: 16px;
+}
+.star_img img,
+.attach_img img {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+  display: block;
+  margin: 0 auto;
+}
+.sender_text {
+  padding-right: 10px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.content_block {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.subject_text {
+  margin-right: 5px;
+}
+.preview_text {
+  color: rgb(130, 130, 130);
+}
+.date_text {
+  text-align: right;
+  color: rgb(130, 130, 130);
+}
+
+@media (max-width: 800px) {
+  .main_container {
+    grid-template-columns: 180px 1fr;
+  }
+  .mail_item {
+    grid-template-columns: 30px 1fr auto;
+    grid-template-rows: auto auto;
+    grid-template-areas:
+      "star sender date"
+      ". content attach";
+    gap: 8px 10px;
+    align-items: start;
+  }
+  .star_img {
+    grid-area: star;
+  }
+  .star_img img {
+    margin: 0;
+  }
+  .sender_text {
+    grid-area: sender;
+  }
+  .date_text {
+    grid-area: date;
+  }
+  .content_block {
+    grid-area: content;
+    white-space: normal;
+  }
+  .attach_img {
+    grid-area: attach;
+  }
+}
+
+@media (max-width: 550px) {
+  .main_container {
+    grid-template-columns: 70px 1fr;
+  }
+  .menu_item {
+    justify-content: center;
+    padding-inline: 0;
+  }
+  .menu_text {
+    display: none;
+  }
+  .container:nth-child(2) .text {
+    display: none;
+  }
+}

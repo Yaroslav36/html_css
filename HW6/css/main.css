@@ -1,0 +1,68 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+table {
+    border-collapse: collapse;
+    margin-inline: auto;
+}
+table, th, td {
+    border: 2px solid rgb(90, 87, 87);
+    text-align: center;
+    font-family: Arial;
+}
+th {
+    height: 50px;
+    width: 280px;
+    font-size: 20px;
+}
+td {
+    padding: 10px;
+    font-size: 18px;
+}
+th:first-child {
+    width: 160px;
+}
+sub, b {
+    text-decoration: none;
+}
+.six_elements td:nth-child(1) {
+    width: 110px;
+}
+.six_elements td:nth-child(2) {
+    width: 50px;
+}
+.six_elements td:nth-child(1),
+.six_elements td:nth-child(2),
+.five_elements td, th:nth-child(1) {
+    background-color: rgb(231, 231, 32);
+}
+.six_elements > *:nth-child(3),
+.five_elements > *:nth-child(2),
+.four_elements > *:nth-child(1) {
+    background-color: rgb(150, 148, 238);
+}
+.six_elements > *:nth-child(4),
+.five_elements > *:nth-child(3),
+.four_elements > *:nth-child(2) {
+    background-color: rgb(224, 111, 83);
+}
+.six_elements > *:nth-child(5),
+.five_elements > *:nth-child(4),
+.four_elements > *:nth-child(3) {
+    background-color: rgb(40, 211, 89);
+}
+.six_elements > *:nth-child(6),
+.five_elements > *:nth-child(5),
+.four_elements > *:nth-child(4) {
+    background-color: rgb(211, 35, 199);
+}
+.wrapper {
+    width: 1300px;
+    margin: 40px auto;
+}
+.cursive_text {
+    font-style: italic;
+    text-align: left;
+}

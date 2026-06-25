@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.wrapper {
+    background-color: rgb(244, 240, 240);
+    width: 800px;
+    min-height: 80px;
+    margin: 60px auto;
+    padding: 60px;
+}
+.clock {
+    width: 350px;
+    height: 350px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-inline: auto;
+    border-radius: 50%;
+    border: 3px solid rgb(50, 161, 181);
+}
+.point {
+  width: 12px;
+  height: 12px;
+  background-color: rgb(50, 161, 181);
+  border-radius: 50%;
+  position: absolute;
+}
+
+@keyframes rotating {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.minutes, .hours {
+    position: absolute;
+    transform-origin: bottom;
+    animation-name: rotating;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    width: 5px;
+    background-color: rgb(50, 161, 181);
+    bottom: 50%;
+}
+.minutes {
+    height: 120px;
+    animation-duration: 5s;
+}
+.hours {
+    height: 90px;
+    animation-duration: 60s;
+}
+
+
+.task-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.door {
+    background-color: rgb(154, 39, 119);
+    border: 10px solid rgb(144, 14, 75);
+    width: 300px;
+    height: 250px;
+    transition-duration: 2s;
+    transition-delay: 3s;
+    transition-timing-function: ease;
+}
+.task-2:hover .door {
+    transition: transform 2s ease;
+}
+
+.task-2:hover .left {
+    transform: matrix3d(0.6, 0, 0, 0.001, 0, 0.8, 0, 0, 0, 0, 1, 0, -80, 0, 0, 1);
+}
+
+.task-2:hover .right {
+    transform: matrix3d(0.6, 0, 0, -0.001, 0, 0.8, 0, 0, 0, 0, 1, 0, 80, 0, 0, 1);
+}
+.task-2 .text {
+    position: absolute;
+    z-index: -1;
+    transition-duration: 2s;
+    transition-delay: 3s;
+    transition-timing-function: ease;
+}
+.task-2:hover .text {
+    z-index: 0;
+}
+
+.task-3 {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.row {
+    display: flex;
+    justify-content: center;
+    height: 150px;
+    width: 650px;
+}
+
+.img-container {
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.img_zoom {
+    width: 100%;
+    height: 100%;
+    background-image: url("https://picsum.photos/325/150");
+    background-size: cover;
+    background-position: center;
+    transition: transform 1s ease, filter 1s ease; 
+}
+
+.task-3 .text {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(231, 226, 226);
+    font-family: Arial;
+    letter-spacing: 2px;
+    transition: background-color 0.3s ease;
+}
+
+.row:hover .img_zoom {
+    filter: brightness(0.5);
+    transform: scale(1.2);
+}
+
+.row:hover .text {
+    background-color: rgb(166, 157, 157);
+}
