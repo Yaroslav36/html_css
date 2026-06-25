@@ -1,0 +1,384 @@
+@media (max-width: 768px) {
+  body .header {
+    height: auto;
+    padding: 20px 0;
+
+    .nav {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      margin-top: 20px;
+      gap: 24px;
+
+      &__bar {
+        display: flex;
+        justify-content: space-evenly;
+
+        ul {
+          display: flex;
+          justify-content: space-evenly;
+          gap: 16px;
+          padding: 0;
+          text-align: center;
+        }
+
+        .cart {
+          justify-content: center;
+        }
+      }
+
+      &__btn {
+        width: 100%;
+        max-width: 280px;
+      }
+    }
+
+    .wrapper {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      position: relative;
+      box-sizing: border-box;
+
+      &::after {
+        display: none;
+      }
+    }
+
+    &__logo {
+      margin: 0;
+      justify-content: center;
+    }
+  }
+
+  body .decor-points {
+    display: none;
+  }
+
+  body .wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    width: 100%;
+    max-width: 100%;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    padding: 0 16px;
+    box-sizing: border-box;
+  }
+
+  body .main {
+    gap: 80px;
+    padding-top: 20px;
+
+    section {
+      width: 100%;
+      height: auto;
+    }
+
+    h2,
+    .blog__header__title .text h2 {
+      font-size: 30px;
+      line-height: 38px;
+      margin-bottom: 20px;
+    }
+
+    .sponsors {
+      margin-top: 60px;
+      margin-bottom: 60px;
+
+      .logos {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 24px;
+        margin: 25px 0;
+        justify-items: center;
+        align-items: center;
+
+        img {
+          max-width: 130px;
+          height: auto;
+        }
+        img:last-child {
+          grid-column: span 2;
+        }
+      }
+    }
+
+    .persons {
+      .wrapper {
+        flex-direction: column-reverse;
+      }
+      &__description {
+        width: 100%;
+      }
+      &__images {
+        width: 100%;
+        height: auto;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto;
+        grid-template-areas: none;
+        gap: 16px;
+
+        &__image,
+        &__image:nth-child(2),
+        &__image:nth-child(3),
+        &__image:nth-child(4),
+        &__image:nth-child(5) {
+          grid-area: auto;
+          width: 100%;
+          height: 240px;
+
+          img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+          }
+        }
+      }
+    }
+
+    .marketing {
+      &__description {
+        width: 100%;
+        height: auto;
+      }
+      &__images {
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+        align-items: center;
+        gap: 16px;
+
+        .big {
+          width: 100%;
+          height: auto;
+
+          img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+          }
+        }
+        .small {
+          display: none;
+        }
+      }
+    }
+
+    .features {
+      &__content {
+        flex-direction: column-reverse;
+        gap: 40px;
+      }
+      &__grid {
+        width: 100%;
+        height: auto;
+        grid-template-columns: 1fr;
+        gap: 20px;
+      }
+      &__image {
+        width: 100%;
+        height: auto;
+        border-radius: 0 150px 150px 150px;
+
+        img {
+          width: 100%;
+          height: auto;
+          object-fit: cover;
+        }
+      }
+    }
+
+    .services {
+      &__description {
+        width: 100%;
+      }
+      &__cards {
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+        gap: 20px;
+
+        .block {
+          width: 100%;
+          height: auto;
+          flex-direction: column;
+          gap: 20px;
+        }
+        .left {
+          margin-top: 0;
+        }
+        &__card {
+          height: auto;
+          padding: 40px 24px;
+        }
+      }
+    }
+
+    .reviews {
+      &__header {
+        height: auto;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 24px;
+        margin-bottom: 40px;
+
+        &__title {
+          width: 100%;
+          height: auto;
+        }
+      }
+      &__cards {
+        width: 100%;
+        height: auto;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        gap: 24px;
+
+        &__card {
+          padding: 40px 24px;
+          h2 {
+            font-size: 24px;
+            line-height: 32px;
+          }
+        }
+      }
+    }
+
+    .blog {
+      height: auto;
+
+      &__header {
+        height: auto;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 24px;
+        margin-bottom: 40px;
+
+        &__title {
+          width: 100%;
+          height: auto;
+          .text {
+            width: 100%;
+          }
+        }
+      }
+      &__cards {
+        width: 100%;
+        height: auto;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        gap: 32px;
+
+        &__card {
+          .image {
+            width: 100%;
+            height: auto;
+
+            img {
+              width: 100%;
+              height: auto;
+              object-fit: cover;
+            }
+          }
+        }
+      }
+    }
+
+    .question {
+      flex-direction: column;
+      height: auto;
+      padding: 40px 24px;
+      gap: 30px;
+
+      &__text {
+        width: 100%;
+        height: auto;
+        text-align: center;
+        h3 {
+          font-size: 26px;
+          line-height: 34px;
+        }
+      }
+      &__links {
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+        gap: 12px;
+
+        &__link {
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  body .footer {
+    padding: 60px 0 30px 0;
+
+    &__main {
+      flex-direction: column;
+      align-items: center;
+      gap: 40px;
+      width: 100%;
+
+      &__company {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+
+        .logo {
+          justify-content: center;
+        }
+
+        .description {
+          margin-top: 20px;
+        }
+
+        .sponsors {
+          display: none;
+        }
+      }
+
+      &__nav,
+      .footer__nav {
+        display: none;
+      }
+    }
+
+    &__subscribe {
+      width: 100%;
+      align-items: center;
+      text-align: center;
+
+      &__title {
+        font-size: 18px;
+        margin-bottom: 15px;
+      }
+      &__text {
+        margin-bottom: 20px;
+      }
+      &__form {
+        flex-direction: column;
+        gap: 12px;
+      }
+      &__input,
+      &__subscribe__btn {
+        width: 100%;
+        box-sizing: border-box;
+      }
+    }
+
+    &__date {
+      margin-top: 50px;
+    }
+  }
+}
